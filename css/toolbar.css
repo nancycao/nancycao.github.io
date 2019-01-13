@@ -1,0 +1,22 @@
+a, a:visited {
+    color: white;
+    display: inline-block;
+    position: relative;
+
+}
+
+a:hover {
+    color: black;
+}
+
+
+.toolbar-links {
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+nav {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
