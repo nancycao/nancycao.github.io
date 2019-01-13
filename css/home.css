@@ -79,13 +79,20 @@ h3 {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.17em;
-  background-position: 0% 88%;
+  background-position: 0% 97%;
   transition: background-size 0.25s ease-in;
   }
 
 .underline--magical:hover {
     background-size: 100% 88%;
 }
+
+.highlight {
+  background-image: linear-gradient(120deg, #c6ffdb 0%, #d6f1ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 88%;
+  background-position: 0% 97%;
+  }
 
 .underline {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
@@ -97,4 +104,12 @@ h3 {
 
 .define {
     font-style: oblique;
+}
+
+.blurb-link, blurb-link:visited {
+    color: black;
+}
+
+.blurb-link: hover {
+    color: lightgray;
 }

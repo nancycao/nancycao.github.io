@@ -1,20 +1,18 @@
 a, a:visited {
-    color: white;
     display: inline-block;
     position: relative;
-
 }
 
-a:hover {
-    color: black;
-}
-
-
-.toolbar-links {
+.toolbar-links, toolbar-links:visited {
+    color: white;
     font-weight: 600;
     padding: 5px;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.toolbar-links: hover {
+    color: black;
 }
 
 nav {
