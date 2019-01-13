@@ -1,1 +1,1 @@
-# nancycao.github.io
+permalink: index/index.html
