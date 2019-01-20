@@ -1,0 +1,172 @@
+.project {
+  text-decoration: none;
+  color: inherit !important;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card_wrapper {
+  width: 350px;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  height: 500px;
+  background: #E4F2F9;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://cdn.ndtv.com/tech/images/gadgets/facebook_messenger_bot.jpg?output-quality=70&output-format=webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project:nth-child(2) .card_wrapper {
+  background-image: url("../img/personal-website.png");
+}
+
+.project:nth-of-type(3) .card_wrapper {
+  background-image: url("../img/weekly-planner.png");
+}
+
+.project:nth-of-type(4) .card_wrapper {
+  background-image: url("https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png");
+}
+
+.project_summary {
+  margin-top: 260px;
+  postion: relative;
+  padding: 0 20px;
+  background: #fff;
+  flex: 1;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+h5 {
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.project_title {
+    position: relative;
+    top: 5px;
+}
+
+.created_date {
+  margin: 10px 0;
+  color: #8A8EA0;
+    font-size: 13px;
+}
+
+.project_desc {
+  margin: 0;
+  font-weight: 300;
+  width: 100%;
+}
+
+.project_link {
+  margin: 0;
+  font-weight: 300;
+  width: 100%;
+}
+
+.project_chip {
+  margin: 0;
+  font-weight: 300;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.project:hover .card_wrapper {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
+  -webkit-transform: scale3d(1.008, 1.008, 1);
+          transform: scale3d(1.008, 1.008, 1);
+}
+
+.md-chip {
+  display: inline-block;
+  padding: 0 12px;
+  border-radius: 32px;
+  font-size: 13px;
+    background: #ededed;
+}
+.md-chip.md-chip-hover:hover {
+  background: #ccc;
+}
+
+.md-chip-clickable {
+  cursor: pointer;
+}
+
+.md-chip, .md-chip-icon {
+  height: 32px;
+  line-height: 32px;
+}
+
+.md-chip-icon {
+  display: block;
+  float: left;
+  background: #009587;
+  width: 32px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 8px 0 -12px;
+}
+
+.md-chip-remove {
+  display: inline-block;
+  background: #aaa;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 -4px 0 4px;
+  cursor: pointer;
+  font: inherit;
+  line-height: 20px;
+}
+.md-chip-remove:after {
+  color: #e0e0e0;
+  content: 'x';
+}
+.md-chip-remove:hover {
+  background: #999;
+}
+.md-chip-remove:active {
+  background: #777;
+}
+
+.md-chips {
+  padding: 12px 0;
+}
+.md-chips .md-chip {
+  margin: 0 5px 3px 0;
+}
+
+.md-chip-raised {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 1px;
+    left: 3px;
+}
+
+.project-icon:hover { 
+    filter: opacity(25%); 
+}
+
