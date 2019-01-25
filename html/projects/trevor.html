@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title> Projects | Nancy Cao </title>
 <link rel="stylesheet" href="../../foundation-6.5.1-complete/css/foundation.css">
-<link rel="stylesheet" href="../../css/project-list.css">
 <link rel="stylesheet" href="../../css/toolbar.css">
 <link rel="stylesheet" href="../../css/icon.css">
 <link rel="stylesheet" href="../../css/project-page.css">
@@ -13,15 +12,147 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:700|Roboto" rel="stylesheet">
 
 </head>
+
 <body>
-    
+
 <nav class="top-bar" id="responsive-menu">
     <a href="../../index.html" class="toolbar-links">home</a> 
     <a href="../project-list.html" class="toolbar-links">projects</a>
     <a href="../resume.html" class="toolbar-links">resume</a>
 </nav>
 
-<h1> Trevor </h1>
-<h2> Facebook Messenger Bot for Legal Advice</h2>
-</body>
+<div class="content">
+
+    <div class="header">
+        <h1>Trevor</h1>
+         <a href="https://github.com/nancycao/trevor-bot" target="_blank">
+            <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-128.png"> 
+            </a>
+    </div>
+
+<h2> Facebook Messenger Bot for Legal Advice </h2>
+<h3> Top Hack @ CodeDay NY 2017 </h3>
+    <h2>Created with <a href="https://github.com/cyan478" target="_blank"> Celine Yan </a> and <a href="https://github.com/FDWraith" target="_blank"> Kevin Zhang </a> </h2>
+
+<br>
+
+<h5>Purpose</h5>
+<p>
+The inspiration for this project stemmed from the controversial <a href="https://en.wikipedia.org/wiki/Executive_Order_13769">immigration ban</a> implemented by executive order of President Trump on January 27, 2017. With so many lawyers and legal advisors who converged to numerous protests around the globe and provided legal advice to those who needed it, we wanted to develop a tool to facilitate these private exchanges of personal information.
+</p>
     
+<h5>Outcome</h5>
+<p>
+We created a prototype Messenger Bot who lives on Facebook, a popular social media platform worldwide, to facilitate confidential legal advising virtually.
+</p>
+    
+<h5>Challenges</h5>
+    <h6>How could we make these exchanges confidential?</h6>
+    <p>
+    Since we were dealing with sensitive legal information being passed back and forth, we had to design a system that preserved confidentiality.
+        
+    <img src="../../img/trevor/message.PNG">
+    In order to preserve anonimity, all the messages passed from the legal advice receiver and legal advisor are transmitted through the Messenger Bot as shown above. Trevor acts as a pipe to pass messages from one party to the other without revealing the identity of the asker.
+    </p>
+    <h6>How do we code a Messenger Bot?</h6>
+    <p>
+    None of us had experience in working with a Messenger Bot before but we had to complete our prototype within 24 hours for CodeDay NY. 
+    We leveraged an open-source repository for a starter<a href="https://github.com/hartleybrody/fb-messenger-bot" target="_blank"> Python Facebook Messenger Bot</a>.
+    </p>
+    
+<h5>Messenger Bot Demo</h5>
+The following images contain actual messenges that were sent to and from our deployed chatbot. We will first walkthrough the asker's user process.
+<br><br>
+
+    <div class="grid-x">
+      <div class="cell large-auto">
+        <img src="../../img/trevor/Asker_1.png"></div>
+        <div class="cell large-auto">
+            <p class="caption"> Using the options feature in a Facebook Messenger Bot, we start with the user identifying themselves as either a legal advice seeker or a legal volunteer. </p>
+        </div>
+    </div>
+    <br>
+    <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Asker_2.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption"> Then, we asked which legal category the question was related to in order to best match the advisee with the most helpful advisor. Legal category is one of the characteristics in the matching algorithm. </p>
+        </div>
+    </div>
+    <br>
+    <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Asker_3.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption"> The Messenger Bot asks two optional questions to gather basic, preliminary information for a legal advisor. This expediates the process since  the age and state of residence of the advisee are relevant pieces of information when looking at law.</p>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Asker_4.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption"> Using the matching algorithm based on the rating of each legal advisor, state of the advisee, and subject matter of the legal question, we match the advisee to the most qualified legal advisor.</p>
+        </div>
+    </div>
+        <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Asker_5.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption"> Note that all messages from the legal volunteer are passed through Trevor, keeping the advisee protected when revealing senstive information. When the advisee is ready to end, they type STOP to terminate the conversation with their legal advisor.</p>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Asker_6.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption"> Lastly, the advisee will rate the help they have received from the legal volunteer. This will help matches in the future where we will pair advisees with the highest quality legal advisors.</p>
+        </div>
+    </div>
+<br>
+<p>We will now walkthrough the legal advisor's user process. </p>
+    <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Volunteer_1.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption">This is the same first step for an asker, exxcept now the user identifies themselves as a legal volunteer.</p>
+        </div>
+    </div>
+       <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Volunteer_2.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption">The Messenger Bot gathers the name and state in which the volunteer practices law, since laws vary state by state.</p>
+        </div>
+    </div>
+       <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Volunteer_3.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption">The volunteer is now on-call until a client is matched to them. Like before, all messages from the legal advisor are passed through the Messenger Bot to the client.</p>
+        </div>
+    </div>
+           <div class="grid-x">
+        <div class="cell large-auto">
+            <img src="../../img/trevor/Volunteer_4.png">
+        </div>
+        <div class="cell large-auto">
+            <p class="caption">The conversation with the client ends and the volunteer is now on standby once again until they receive another match.</p>
+        </div>
+    </div>
+<br> 
+<h5>Technical Information</h5> 
+<p>We utilized the Facebook Messenger Bot API and programmed using Python in a Python Wrapper provided by Hartly Brody. We retained Client and Volunteer input information in a SQLite database. According to the Messenger Bot instructions, we deployed using Heroku for our Messenger Bot to be live.</p>
+
+<h5>Reflections</h5> 
+<p> This hackathon was a great way to learn how to quickly complete a prototype in a limited amount of time using open-source tools available to us. In the future, we would like to make sure that the system we pass messages through cannot be intercepted since secruity is the upmost concern for this project. We would also like to research more about features that both legal adivors and advisees need such as: expanding the topics of legal inquiries and the types of preliminary questions would be helpful for a legal advisor to have beforehand from the advisee.
+</p>
+</div>
+</body>

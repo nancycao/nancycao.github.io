@@ -1,0 +1,60 @@
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 17px;
+    color: #8A8EA0;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+h6 {
+    color: #8A8EA0;
+    font-weight: 500;
+}
+
+.caption {
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.header {
+    overflow:auto;
+}
+
+.header h1 {
+    float:left;
+}
+
+.header img {
+    float:left;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.header img:hover {
+    filter: opacity(40%);
+}
