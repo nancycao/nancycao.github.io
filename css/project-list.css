@@ -30,16 +30,8 @@
   background-repeat: no-repeat;
 }
 
-.project:nth-child(2) .card_wrapper {
-  background-image: url("../img/personal-website.png");
-}
-
-.project:nth-of-type(3) .card_wrapper {
-  background-image: url("../img/weekly-planner.png");
-}
-
-.project:nth-of-type(4) .card_wrapper {
-  background-image: url("https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png");
+.project:nth-child(1) .card_wrapper {
+  background-image: url("../img/portfolio-icon.png");
 }
 
 .project_summary {
@@ -166,7 +158,6 @@ h5 {
     left: 3px;
 }
 
-.project-icon:hover { 
-    filter: opacity(25%); 
+.project-icon:hover {
+    filter: opacity(25%);
 }
-
